@@ -1,0 +1,35 @@
+/* http://sixrevisions.com/tutorials/javascript_tutorial/create_lightweight_javascript_tooltip/
+ */
+.hotspot {
+  color:#900; 
+  border-bottom:1px dotted #900; 
+  cursor:pointer;
+}
+#tt {
+  position:absolute;
+  display:block;
+  background:url(images/tt_left.gif) top left no-repeat;
+}
+#tttop {
+  display:block;
+  height:5px;
+  margin-left:5px;
+  background:url(images/tt_top.gif) top right no-repeat;
+  overflow:hidden;
+}
+#ttcont {
+  display:block;
+  padding:2px 12px 3px 7px;
+  margin-left:5px;
+  background:#666;
+  font-family:"Lucida Grande", Tahoma, Arial, Verdana, sans-serif;
+  font-size: 12px;
+  color:#fff;
+}
+#ttbot {
+  display:block;
+  height:5px;
+  margin-left:5px;
+  background:url(images/tt_bottom.gif) top right no-repeat;
+  overflow:hidden;
+}
