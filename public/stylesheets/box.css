@@ -1,0 +1,194 @@
+/*
+body {
+  background-color: white;
+  font-family: Helvetica, Arial, sans-serif;
+  margin: 0;
+}
+
+html[main-frame] body {
+  background-color: #CCC;
+}
+
+html[main-frame][high-color-depth] body {
+  background: -webkit-linear-gradient(#CCC, #AAA);
+  background-attachment: fixed;
+}
+*/
+
+html[main-frame] #cell {
+  padding: 40px;
+}
+
+#box {
+  background-color: white;
+  color: black;
+  font-size: 10pt;
+  line-height: 18px;
+  margin: auto;
+  max-width: 750px;
+  min-width: 200px;
+  padding: 5px;
+}
+
+html[main-frame] #box {
+  border-radius: 5px;
+  -webkit-box-shadow: 2px 5px 12px #555;
+  padding: 20px;
+  width: 80%;
+}
+
+ul {
+  margin: 0;
+  padding-bottom: 0;
+}
+
+li {
+  padding-top: 2px;
+}
+
+h1 {
+  font-size: 12pt;
+  line-height: 20px;
+  margin: 0;
+}
+
+html[main-frame] h1 {
+  font-size: 18pt;
+  line-height: 30px;
+}
+
+h1 img {
+  border: 0;
+  float: right;
+  -webkit-margin-start: 20px;
+  margin-top: -4px;
+}
+
+html[dir=rtl] h1 img {
+  float: left;
+}
+
+h2 {
+  font-size: 10pt;
+  font-weight: bold;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: #00c;
+}
+
+a:active {
+  color: #f00;
+}
+
+a:visited {
+  color: #551a8b;
+}
+
+#errorSummary, #suggestions, #search {
+  -webkit-margin-start: 3px;
+  margin-top: 15px;
+}
+
+#errorDetails {
+  color: #777;
+  -webkit-margin-start: 3px;
+  margin-top: 30px;
+}
+
+.failedUrl {
+  word-wrap: break-word;
+}
+
+table.facts { font-family: Helvetica, Verdana, sans-serif; }
+table.facts td.sep { background-color: #a0c0d0; }
+table.facts td.rh { background-color: #c0e0f0; }
+table.facts td.wait { background-color: #f0e0e0; }
+table.facts td { background-color: #d0d0d0; }
+table.facts th { background-color: #a0c0d0; }
+
+a.button {
+   float: left;
+   border-top: 1px solid #96d1f8;
+   background: #65a9d7;
+   background: -webkit-gradient(linear, left top, left bottom, from(#3e779d), to(#65a9d7));
+   background: -webkit-linear-gradient(top, #3e779d, #65a9d7);
+   background: -moz-linear-gradient(top, #3e779d, #65a9d7);
+   background: -ms-linear-gradient(top, #3e779d, #65a9d7);
+   background: -o-linear-gradient(top, #3e779d, #65a9d7);
+   padding: 5px 10px;
+   -webkit-border-radius: 11px;
+   -moz-border-radius: 11px;
+   border-radius: 11px;
+   -webkit-box-shadow: rgba(0,0,0,1) 0 1px 0;
+   -moz-box-shadow: rgba(0,0,0,1) 0 1px 0;
+   box-shadow: rgba(0,0,0,1) 0 1px 0;
+   text-shadow: rgba(0,0,0,.4) 0 1px 0;
+   color: white;
+   font-size: 16px;
+   font-family: 'Lucida Grande', Helvetica, Arial, Sans-Serif;
+   text-decoration: none;
+   vertical-align: middle;
+   }
+a.button:hover {
+   border-top-color: #28597a;
+   background: #28597a;
+   color: #ccc;
+   }
+a.button:active {
+   border-top-color: #1b435e;
+   background: #1b435e;
+   }
+
+table.buttons td a {
+   text-shadow: rgba(0,0,0,.4) 0 1px 0;
+   color: white;
+   font-size: 16px;
+   font-family: 'Lucida Grande', Helvetica, Arial, Sans-Serif;
+   text-decoration: none;
+   vertical-align: middle;
+}
+table.buttons td:hover {
+   text-decoration: underline;
+}
+table.buttons td:hover a:hover {
+   text-decoration: underline;
+}
+
+/* <a href="#" class="button" style="top: 229px; left: 166px; ">Hello<br> World</a> */
+.orangebutton {      
+     border-top: 1px solid #ff9747;
+     background: #f08718;
+     background: -webkit-gradient(linear, left top, left bottom, from(#edbc66), to(#f08718));
+     background: -webkit-linear-gradient(top, #edbc66, #f08718);
+     background: -moz-linear-gradient(top, #edbc66, #f08718);
+     background: -ms-linear-gradient(top, #edbc66, #f08718);
+     background: -o-linear-gradient(top, #edbc66, #f08718);
+     padding: 6.5px 13px;
+     -webkit-border-radius: 14px;
+     -moz-border-radius: 14px;
+     border-radius: 14px;
+     -webkit-box-shadow: rgba(0,0,0,1) 0 1px 0;
+     -moz-box-shadow: rgba(0,0,0,1) 0 1px 0;
+     box-shadow: rgba(0,0,0,1) 0 1px 0;
+     text-shadow: rgba(0,0,0,.4) 0 1px 0;
+     color: white;
+     font-size: 24px;
+     font-family: 'Lucida Grande', Helvetica, Arial, Sans-Serif;
+     text-decoration: none;
+     vertical-align: middle;
+} 
+.orangebutton:hover {      
+     border-top-color: #ff6600;
+     background: #ff6600;
+     color: #ffffff;
+} 
+.orangebutton:active {      
+     border-top-color: #f0f0f0;
+     background: #f0f0f0;
+} 
+
+
+
