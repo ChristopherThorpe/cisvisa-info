@@ -103,6 +103,7 @@ table.steps td {
   vertical-align: top;
   font-size: 12px;
 }
+
 table.steps td.step {   
    /* background-color: #2c7a9f; */
    background-image: url('/images/button32x32.png');
@@ -139,5 +140,15 @@ table.facts td.wait { background-color: #f0e0e0; }
 table.facts td { background-color: #d0d0d0; }
 table.facts th { background-color: #a0c0d0; }
 
-
+table.infogrid { 
+  font-family: Helvetica, Verdana, sans-serif; 
+}
+table.infogrid td.sep { background-color: #dddddd; }
+table.infogrid tr.even td.sep { background-color: #dddddd; }
+table.infogrid tr td  { background-color: #CFD8E7; }
+table.infogrid tr.even td { background-color: #E8EDF3; }
+table.infogrid th { 
+  background-color: #4E81BD; 
+  color: white;
+}
 
