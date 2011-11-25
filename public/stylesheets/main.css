@@ -94,11 +94,6 @@ div.pagewrap {
      background: #f0f0f0;
 } 
 
-ul li {
-  margin-left: -20px;
-  margin-bottom: 6px;
-}
-
 table.steps td {
   vertical-align: top;
   font-size: 12px;
