@@ -175,6 +175,10 @@ table.buttons td:hover a:hover {
    text-decoration: underline;
 }
 
+td.letters a img {
+  border: 1px solid black;
+}
+
 /* <a href="#" class="button" style="top: 229px; left: 166px; ">Hello<br> World</a> */
 .orangebutton {      
      border-top: 1px solid #ff9747;
