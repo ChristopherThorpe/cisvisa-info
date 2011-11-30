@@ -105,6 +105,8 @@ function toggle(arg) {
 <p>Organizations and sponsorship are complicated. We tried to write up a page on it, then realized it was too general to be helpful. However, if you fill in the information below, we'll contact you, for free, to discuss your options.</p>
 
 
+<form action="/referral" method="POST">
+<input type="hidden" name="page" value="we-should-talk">
 <table>
 <tr>
   <td>
@@ -124,12 +126,14 @@ function toggle(arg) {
 <label for="email">Phone:</label>
 </td><td>
 <input type="text" name="phone" size=50>
+<br/><font size=-2>&nbsp;(Please include country code.)</font>
 </td></tr>
 
 <tr><td>
 <label for="languages">Languages:</label>
 </td><td>
 <input type="text" name="languages" size=50>
+<input type="hidden" name="locale" value="en">
 
 </td></tr>
 
@@ -175,6 +179,7 @@ function toggle(arg) {
 <input width=275 type="image" src="/images/attorney.png" alt="Help me find an attorney"/>
 </td></tr>
 </table>
+</form>
 
 </td><td valign=top width=10>
 &nbsp;

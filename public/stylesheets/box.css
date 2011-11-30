@@ -180,6 +180,9 @@ td.letters a img {
 }
 
 /* <a href="#" class="button" style="top: 229px; left: 166px; ">Hello<br> World</a> */
+a.orangebutton {
+  color: white;
+}
 .orangebutton {      
      border-top: 1px solid #ff9747;
      background: #f08718;

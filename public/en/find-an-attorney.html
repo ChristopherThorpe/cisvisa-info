@@ -162,6 +162,8 @@ We can connect you with an attorney we personally know and trust. There is no ob
 
 <h2>Connect with an attorney in our network</h2>
 
+<form action="/referral" method="POST">
+<input type="hidden" name="page" value="find-an-attorney">
 <table>
 <tr>
   <td>
@@ -180,12 +182,14 @@ We can connect you with an attorney we personally know and trust. There is no ob
 <label for="email">Phone:</label>
 </td><td>
 <input type="text" name="phone" size=50>
+<br/><font size=-2>&nbsp;(Please include country code.)</font>
 </td></tr>
 
 <tr><td>
 <label for="languages">Languages:</label>
 </td><td>
 <input type="text" name="languages" size=50>
+<input type="hidden" name="locale" value="en">
 
 </td></tr>
 
@@ -231,6 +235,7 @@ We can connect you with an attorney we personally know and trust. There is no ob
 <input width=275 type="image" src="/images/attorney.png" alt="Help me find an attorney"/>
 </td></tr>
 </table>
+</form>
 
 </td><td valign=top width=10>
 &nbsp;

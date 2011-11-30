@@ -58,6 +58,15 @@ function toggle(arg) {
 <!-- END OF COMMON HEADERS -->
 
 <body>
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) {return;}
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
   <div id="container">
   <div class="pagewrap">
 
@@ -102,12 +111,10 @@ function toggle(arg) {
     </table>
 
   </td></tr>
-  <tr><td>
-
-    <a href="/index.html">
-    <img src="foo.gif" width=600 height=120 alt="There are 93 types of US visa, across 24 categories. Which one is right for you?">
-    </a>
-
+  <tr><td bgcolor=a0b0c0 onclick="location.href='index.html';">
+    <div style="text-shadow: rgba(0,0,0,.8) 0 2px 0; color: white; padding: 10px; font-size: 28px">There are 93 types of United States visas,<br/>across 24 categories.<br/><br/>
+    <div align=right><a class="orangebutton" href="index.html">Which one is right for me?</a>&nbsp;&nbsp;</div></div>
+  <br/>
   </td></tr>
   <tr><td>
 
@@ -140,7 +147,7 @@ function toggle(arg) {
 
       <hr/>
 
-      [Facebook widget goes here]
+      <div class="fb-like" data-href="http://www.facebook.com/cisvisa" data-send="false" data-width="250" data-show-faces="true" data-font="lucida grande"></div>
 
     </td><td width=50%>
 
@@ -151,11 +158,11 @@ function toggle(arg) {
         <h3>If you know what you're looking for, try our free online guides.</h3>
 
         <center>
-	<p><a href="/en/visa-type-interview/spouse-or-fiance.html"><img src="foo.gif" width=260 height=30 alt="Fiance and spouse visas"></a></p>
-        <p><a href="/en/visa-type-interview/my-family.html"><img src="foo.gif" width=260 height=30 alt="Visas for family members"></a></p>
-        <p><a href="/en/visa-type-interview/workinus.html"><img src="foo.gif" width=260 height=30 alt="Working in the USA"></a></p>
-        <p><a href="/en/visa-type-interview/study.html"><img src="foo.gif" width=260 height=30 alt="Studying in the USA"></a></p>
-        <p><a href="/en/visa-type-interview/organization.html"><img src="foo.gif" width=260 height=30 alt="Visas for organizations"></a></p>
+          <p class="homebutton" onclick="location.href = this.children[0].href"><a href="/en/visa-type-interview/spouse-or-fiance.html">Fianc&eacute;(e) and Spouse Visas</a></p>
+          <p class="homebutton" onclick="location.href = this.children[0].href"><a href="/en/visa-type-interview/my-family.html">Visas for family members</a></p>
+          <p class="homebutton" onclick="location.href = this.children[0].href"><a href="/en/visa-type-interview/workinus.html">Working in the USA</a></p>
+          <p class="homebutton" onclick="location.href = this.children[0].href"><a href="/en/visa-type-interview/study.html">Studying in the USA</a></p>
+          <p class="homebutton" onclick="location.href = this.children[0].href"><a href="/en/visa-type-interview/organization.html">Visas for organizations</a></p>
         </center>
 
         </font>
@@ -170,7 +177,7 @@ function toggle(arg) {
         <h3>Every fall, the USA gives a "green card" to 50,000 lucky winners from around the world.  Next year could be your turn.</h3>
 
         <center>
-	<p><img src="foo.gif" width=260 height=40 alt="2012 application available soon, click here to be notified"></p>
+          <p class="homebutton"><a href="/en/notifydv.html">Notify me when you begin the 2012 application round</a></p>
 	</center>
 
 	Thanks to our 2011 applicants! We'll find out who won in May 2012.
