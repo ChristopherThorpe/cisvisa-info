@@ -1,9 +1,13 @@
-use Rack::Static, 
-  :urls => ["/stylesheets", "/images", "/javascripts"],
-  :root => "public"
+require './app'
 
-run Rack::File.new("public")
+run Sinatra::Application
 
+#use Rack::Static, 
+#  :urls => ["/stylesheets", "/images", "/javascripts"],
+#  :root => "public"
+#
+#run Rack::File.new("public")
+#
 #run lambda { |env|
 #  [
 #    200, 

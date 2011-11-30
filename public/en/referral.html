@@ -107,13 +107,13 @@ function toggle(arg) {
 We look for several things in an attorney. If your friends or family can refer you, that's a good place to start, but otherwise:
 </p>
 <ul>
-<li>Attorneys should have <b>significant experience</b>, in different types of cases, since odd things can happen during a visa application and (despite some advertisements) no one can make guarantees.</li>
+<li>A good attorney will have <b>significant experience</b>, in different types of cases, since odd things can happen during a visa application and (despite some advertisements) no one can make guarantees.</li>
 </ul>
 <ul>
 <li>Attorneys should speak your <b>language</b>, so that you can communicate clearly with them.</li>
 </ul>
 <ul>
-<li>And finally, good attorneys make you <b>feel comfortable</b>.</li>
+<li>And finally, your attorney should make you <b>feel comfortable</b>.</li>
 </ul>
 
 If you need help finding an attorney, however, we're happy to connect you with someone in our network. Read below for more details.
@@ -161,9 +161,9 @@ If you need help finding an attorney, however, we're happy to connect you with s
 <tr>
   <td valign=top width=422>
 
-<h2>Get a free consult</h2>
-We can connect you with an attorney we personally know and trust. There is no obligation, and it's your decision whether to hire them.
+<h2>Get a free consultation</h2>
 
+<form action="/referral" method="POST">
 <table>
 <tr>
   <td>
@@ -188,6 +188,7 @@ We can connect you with an attorney we personally know and trust. There is no ob
 <label for="languages">Languages:</label>
 </td><td>
 <input type="text" name="languages" size=50>
+<input type="hidden" name="locale" value="en">
 
 </td></tr>
 
@@ -233,6 +234,7 @@ We can connect you with an attorney we personally know and trust. There is no ob
 <input width=275 type="image" src="/images/attorney.png" alt="Help me find an attorney"/>
 </td></tr>
 </table>
+</form>
 
 </td><td valign=top width=10>
 &nbsp;
