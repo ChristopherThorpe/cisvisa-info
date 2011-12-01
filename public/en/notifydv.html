@@ -138,7 +138,7 @@ function toggle(arg) {
 <form action="/feedback" method="POST">
 <input type="hidden" name="locale" value="en">
 <input type="hidden" name="hidden" value="Notify me about DV Lottery">
-<table>
+<table class="table-form">
   <tr><td colspan=3><hr/></td></tr>
   <tr>
     <td valign=top><label for="name">Your&nbsp;name:</label></td>
@@ -149,7 +149,7 @@ function toggle(arg) {
     <td valign=top><input name="email" type="text" size=50/></td>
   </tr>
   <tr><td colspan=3><hr/></td></tr>
-  <tr><th valign=top align=right><label for="feedback">Message:</label></th>
+  <tr><th valign=top align=right><label for="feedback">Message:&nbsp;</label></th>
     <td valign=top><textarea name="feedback" rows=8 cols=36>
 Dear CIS Visa,
 
@@ -200,8 +200,15 @@ Please notify me when you are accepting entries for the next DV lottery!</textar
 <hr/>
 
 <center>
-  Terms of Service | Privacy Policy
+  <font size="-2">
+    <a target=_new href="/en/aboutus.html">About Us</a> | <a target=_new
+      href="/en/terms.html">Terms of Service</a> | <a target=_new
+      href="/en/privacy.html">Privacy Policy</a>
+    <br/><br/>
+    &copy; Copyright 2011 CIS, LLC. All Rights Reserved.
+  </font>
 </center>
+
 
 </div>
 </div>
