@@ -41,6 +41,7 @@ ul {
   margin: 0;
   padding-bottom: 10;
   list-style-type: square;
+	padding-left:15px
 }
 
 li {
@@ -168,9 +169,7 @@ table.buttons td a {
    text-decoration: none;
    vertical-align: middle;
 }
-table.buttons td:hover {
-   text-decoration: underline;
-}
+
 table.buttons td:hover a:hover {
    text-decoration: underline;
 }
