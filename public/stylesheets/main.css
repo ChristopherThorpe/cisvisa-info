@@ -1960,3 +1960,4 @@ table.infogrid th {
 .table-form td {padding:0 5px 5px 0}
 .table-form td input, .table-form td textarea {width:100%}
 .table-form .right-blue {padding-left:5px; padding-top:5px}
+.td-images td.bg {background:url(../images/button.png) 0 0 no-repeat; height:104px; width:200px; text-align:center}
