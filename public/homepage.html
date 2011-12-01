@@ -54,6 +54,20 @@ function toggle(arg) {
         }
 } 
 </script>
+
+<script type="text/javascript">
+  document.write(unescape("%3Cscript src='" + ((document.location.protocol=="https:")?"https://snapabug.appspot.com":"http://www.snapengage.com") + "/snapabug.js' type='text/javascript'%3E%3C/script%3E"));</script><script type="text/javascript">
+  SnapABug.setLocale("en");
+  SnapABug.addButton("41ba034c-2b1b-4240-bf97-2c38b6245b66","0","45%");
+</script>
+
+<!-- start Mixpanel before the end HEAD tag -->
+<script type="text/javascript">
+  var mpq=[];
+  mpq.push(["init","9937819a1e5a06ffe437594ff41aa4c7"]);
+  (function(){var b,a,e,d,c;b=document.createElement("script");b.type="text/javascript";b.async=true;b.src=(document.location.protocol==="https:"?"https:":"http:")+"//api.mixpanel.com/site_media/js/api/mixpanel.js";a=document.getElementsByTagName("script")[0];a.parentNode.insertBefore(b,a);e=function(f){return function(){mpq.push([f].concat(Array.prototype.slice.call(arguments,0)))}};d=["init","track","track_links","track_forms","register","register_once","identify","name_tag","set_config"];for(c=0;c<d.length;c++){mpq[d[c]]=e(d[c])}})();
+</script><!-- end Mixpanel -->
+
 </head>
 <!-- END OF COMMON HEADERS -->
 
@@ -78,37 +92,37 @@ function toggle(arg) {
           <a href="/"><img src="/images/banner-narrow.png"></a>
     </td>
     <td align="center" valign=middle>
-          <a href="/dv_interview/new_locale?locale=es&amp;step=reload"><img src="/images/icons/flags/gif/es.gif"></a><br>
+          <a href="#" onclick='mpq.track("Locale", {"locale": "es"}); alert("¡Disculpe! Todavía estamos trabajando en las páginas en castellano."); return false;'><img src="/images/icons/flags/gif/es.gif"></a><br>
           <font size="-2">
-            <a href="/dv_interview/new_locale?locale=es&amp;step=reload">Castellano</a>
+            <a href="#" onclick='mpq.track("Locale", {"locale": "es"}); alert("¡Disculpe! Todavía estamos trabajando en las páginas en castellano."); return false;'>Castellano</a>
           </font>
 
           </td><td align="center" valign=middle>
-          <a href="/dv_interview/new_locale?locale=de&amp;step=reload"><img src="/images/icons/flags/gif/de.gif"></a><br>
+          <a href="#" onclick='mpq.track("Locale", {"locale": "de"}); alert("Leider arbeiten wir noch in der deutschen Fassung."); return false;'><img src="/images/icons/flags/gif/de.gif"></a><br>
           <font size="-2">
-            <a href="/dv_interview/new_locale?locale=de&amp;step=reload">Deutsch</a>
+            <a href="#" onclick='mpq.track("Locale", {"locale": "de"}); alert("Leider arbeiten wir noch in der deutschen Fassung."); return false;'>Deutsch</a>
           </font>
 
           </td><td align="center" valign=middle>
-          <a href="/dv_interview/new_locale?locale=en&amp;step=reload"><img src="/images/icons/flags/gif/gb.gif"></a><br>
+          <a href="#" onclick='return false;'><img src="/images/icons/flags/gif/gb.gif"></a><br>
           <font size="-2">
-            <a href="/dv_interview/new_locale?locale=en&amp;step=reload">English</a>
+            <a href="#" onclick='return false;'>English</a>
           </font>
 
           </td><td align="center" valign=middle>
-          <a href="/dv_interview/new_locale?locale=fr&amp;step=reload"><img src="/images/icons/flags/gif/fr.gif"></a><br>
+          <a href="#" onclick='mpq.track("Locale", {"locale": "fr"}); alert("Veuillez nous en excuser. Nous travaillons encore sur la version française."); return false;'><img src="/images/icons/flags/gif/fr.gif"></a><br>
           <font size="-2">
-            <a href="/dv_interview/new_locale?locale=fr&amp;step=reload">Français</a>
+            <a href="#" onclick='mpq.track("Locale", {"locale": "fr"}); alert("Veuillez nous en excuser. Nous travaillons encore sur la version française."); return false;'>Français</a>
           </font>
 
           </td><td align="center" valign=middle>
-          <a href="/dv_interview/new_locale?locale=ru&amp;step=reload"><img src="/images/icons/flags/gif/ru.gif"></a><br>
+          <a href="#" onclick='mpq.track("Locale", {"locale": "ru"}); alert("Мы все еще работаем над русская версия."); return false;'><img src="/images/icons/flags/gif/ru.gif"></a><br>
           <font size="-2">
-            <a href="/dv_interview/new_locale?locale=ru&amp;step=reload">Русский</a>
+            <a href="#" onclick='mpq.track("Locale", {"locale": "ru"}); alert("Мы все еще работаем над русская версия."); return false;'>Русский</a>
           </font>
-
     </td></tr>
     </table>
+  <!-- END OF BANNER -->
 
   </td></tr>
   <tr><td bgcolor=a0b0c0 onclick="location.href='index.html';">
@@ -177,7 +191,7 @@ function toggle(arg) {
         <h3>Every fall, the USA gives a "green card" to 50,000 lucky winners from around the world.  Next year could be your turn.</h3>
 
         <center>
-          <p class="homebutton"><a href="/en/notifydv.html">Notify me when you begin the 2012 application round</a></p>
+          <p class="homebutton" onclick="location.href = this.children[0].href"><a href="/en/notifydv.html">Notify me when you begin the 2012 application round!</a></p>
 	</center>
 
 	Thanks to our 2011 applicants! We'll find out who won in May 2012.
@@ -190,11 +204,15 @@ function toggle(arg) {
     </table>
 
   </td></tr>
-  <tr><td>
+  <tr>
+    <td>
+    <hr/>
+      <table width="100%">
+        <tr><td width=100>&nbsp;</td>
+        <td>
     <center>
     <font size="-2">
 
-    <hr/>
 
     <p>CIS Visa is not affiliated with the US government or the US CIS.<br/>
     We will never sell your email address to any third party.</p>
@@ -205,6 +223,12 @@ function toggle(arg) {
 
     </font>
     </center>
+    </td>
+    <td width=100 valign=top>
+          <a href="http://mixpanel.com/f/partner"><img
+            src="http://mixpanel.com/site_media/images/partner/badge_blue.png"
+            alt="Real Time Web Analytics" /></a>
+    </td></tr></table>
   </td></tr>
   </table>
 

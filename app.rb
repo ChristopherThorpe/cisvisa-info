@@ -25,7 +25,10 @@ def send_email(recipient, subject, body)
   })
 end
 
-def error_message(message)
+def error_message(message, locale="en")
+  raise 'locale not supported yet' unless locale.downcase.to_s == 'en'
+  header = "Something went wrong..."
+  goback = "Go back..."
   return <<EOF
 <html>
 
@@ -60,29 +63,6 @@ def error_message(message)
     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
   })();
 </script>
-
-<script language="javascript"> 
-function popUp(URL) {
-  if (typeof popupId !== 'undefined') {
-    eval("pagePopup" + popupId + ".close();");
-  }
-  popupId = (new Date()).getTime();
-  eval("pagePopup" + popupId + " = window.open(URL, '" + popupId + "', 'toolbar=0,scrollbars=0,location=0,statusbar=0,menubar=0,resizable=1,width=300,height=550,left = 835,top = 400');");
-}
-
-function toggle(arg) {
-        var ele = document.getElementById("toggleText" + arg);
-        var text = document.getElementById("displayText");
-        if(ele.style.display == "block") {
-                ele.style.display = "none";
-                text.innerHTML = "Learn more...";
-        }
-        else {
-                ele.style.display = "block";
-                text.innerHTML = "Hide this text:";
-        }
-} 
-</script>
 </head>
 <!-- END OF COMMON HEADERS -->
 
@@ -95,9 +75,9 @@ function toggle(arg) {
       </tr>
     </table>
     <div class="pagewrap">
-      <h1>Something went wrong...</h1>
+      <h1>#{header}</h1>
       <p>#{message}</p>
-      <p><a href="javascript:history.back()">Go back...</a></p>
+      <p><a href="javascript:history.back()">#{goback}</a></p>
     </div>
   </div>
 </body>
@@ -136,8 +116,12 @@ EOF
   redirect "/#{params[:locale]}/mailsent.html"
 end
 
+get '/' do
+  redirect "/index.html"
+end
+
 post '/friends' do
-  return error_message("Please supply a valid email address for yourself and at least one friend") unless params[:email].present? && params[:email1].present?
+  return error_message("Please supply a valid email address for yourself and at least one friend.") unless params[:email].present? && params[:email1].present?
   friend  = (params[:name].present? ? params[:name] : params[:email])
   send_friend_email(friend, params[:email1])
   send_friend_email(friend, params[:email2]) if params[:email2].present?
