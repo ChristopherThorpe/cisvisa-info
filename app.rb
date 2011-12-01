@@ -120,6 +120,10 @@ get '/' do
   redirect "/index.html"
 end
 
+get '/homepage.html' do
+  redirect "/index.html"
+end
+
 post '/friends' do
   return error_message("Please supply a valid email address for yourself and at least one friend.") unless params[:email].present? && params[:email1].present?
   friend  = (params[:name].present? ? params[:name] : params[:email])
